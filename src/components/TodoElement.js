@@ -27,7 +27,7 @@ export default class TodoElement extends Component {
     }
 
     onClick() {
-        if (this.state.status == false) {
+        if (this.state.status === false) {
             this.setState({ status: true })
             this.props.onMarkDone(this.state.id)
         }
