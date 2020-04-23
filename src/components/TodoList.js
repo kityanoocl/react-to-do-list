@@ -26,9 +26,8 @@ export default class TodoList extends Component {
     }
 
     onChange(event) {
-        if (event.target.value.length > 0) {
-            this.setState({ newItem: event.target.value })
-        }
+        const inputString = event.target.value.length > 0? event.target.value : "";
+        this.setState({ newItem: inputString })
     }
 
     onAddItem() {
